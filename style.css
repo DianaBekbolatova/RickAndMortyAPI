@@ -1,0 +1,142 @@
+body{
+    background-color: greenyellow;
+}
+#characters-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contForCharacter{
+    background-color: rgb(249, 12, 52);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    margin: 7px;
+    padding: 12px;
+    height: 300px;
+    width: 150px;
+}
+.contForCharacter:hover{
+    padding: 15px;
+    box-shadow: 0px 0px 25px purple;
+}
+.imageCharacter{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.name{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.status{
+    font-size: 17px;
+    font-weight: bold;
+}
+.btnInfo{
+    border: none;
+    margin: 13px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: greenyellow;
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.btnInfo:hover{
+    box-shadow: 0px 0px 15px greenyellow;
+    width: 40px;
+}
+
+.btnLike{
+    border: none;
+    margin: 13px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(231, 154, 171);
+    color: white;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+#modal-container{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(95, 207, 95, 0.5);
+
+    
+}
+.modalCharacter{
+    width: 200px;
+    background-color: greenyellow;
+    color: rgb(91, 82, 82);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 650px
+    
+
+
+
+}
+.btnClose{
+    border: none;
+    margin: 13px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(219, 234, 198);
+    color: green;
+    font-weight: bold;
+}
+
+#favorites-container svg{
+   width: 50px;
+   height: 50px;
+   position: relative;
+   
+}
+#count{
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px;
+    color: white;
+}
+
+.ifFavorites{
+    color: red;
+    font-weight: bold;
+}
+
+#modal-favorites{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cartFavorite{
+    border: none;
+    border-radius: 12px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 4px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.cartFavorite img{
+    width: 70px;
+    height: 70px;
+    margin-top: 8px;
+}
